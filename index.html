@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>أزرار الاتصال بالمؤسسة</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .button {
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+  }
+  .location { background-color: #4CAF50; }  /* أخضر */
+  .facebook { background-color: #1877F2; }  /* أزرق فيسبوك */
+  .website { background-color: #FF5722; }   /* برتقالي */
+  .icon {
+    font-size: 24px;
+  }
+</style>
+<!-- استخدام أيقونات من Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<a href="https://q.me-qr.com/IJeTgH9S" class="button location" target="_blank">
+  <i class="fas fa-map-marker-alt icon"></i> الموقع الجغرافي
+</a>
+
+<a href="https://q.me-qr.com/jpCWs5jC" class="button facebook" target="_blank">
+  <i class="fab fa-facebook icon"></i> صفحة الفيسبوك
+</a>
+
+<a href="https://q.me-qr.com/IbY9Yj5b" class="button website" target="_blank">
+  <i class="fas fa-globe icon"></i> الموقع الإلكتروني
+</a>
+
+</body>
+</html>
