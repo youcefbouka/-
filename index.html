@@ -23,10 +23,10 @@
     }
 
     .button {
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 10px;
       width: 100%;
       max-width: 420px;
       margin: 10px auto;
@@ -44,7 +44,14 @@
       opacity: 0.9;
     }
 
-    /* الألوان حسب الخدمة */
+    /* وضع الأيقونة في حافة الزر اليمنى */
+    .button i {
+      position: absolute;
+      right: 15px;
+      font-size: 22px;
+    }
+
+    /* ألوان حسب المنصة */
     .website { background-color: #0056b3; }
     .mail { background-color: #d93025; }
     .phone { background-color: #4a90e2; }
@@ -52,8 +59,10 @@
     .facebook { background-color: #1877f2; }
     .maps { background-color: #34a853; }
 
-    i {
-      font-size: 22px;
+    /* لجعل الأرقام تظهر من اليسار إلى اليمين */
+    .ltr {
+      direction: ltr;
+      display: inline-block;
     }
   </style>
 </head>
@@ -64,36 +73,46 @@
 
   <!-- الموقع الإلكتروني -->
   <a href="https://www.irwane.org" class="button website">
-    <i class="fa-solid fa-globe"></i> الموقع الإلكتروني: www.irwane.org
+    <i class="fa-solid fa-globe"></i>
+    الموقع الإلكتروني: www.irwane.org
   </a>
 
   <!-- البريد الإلكتروني -->
   <a href="mailto:fondation@irwane.org" class="button mail">
-    <i class="fa-solid fa-envelope"></i> البريد الإلكتروني: fondation@irwane.org
+    <i class="fa-solid fa-envelope"></i>
+    البريد الإلكتروني: fondation@irwane.org
   </a>
 
   <!-- أرقام الهواتف الثابتة -->
   <a href="tel:+21329239223" class="button phone">
-    <i class="fa-solid fa-phone"></i> هاتف المؤسسة: +213 29 23 92 23
+    <i class="fa-solid fa-phone"></i>
+    هاتف المؤسسة:
+    <span class="ltr">+213 29 23 92 23</span>
   </a>
 
   <a href="tel:+21344442937" class="button phone">
-    <i class="fa-solid fa-phone"></i> هاتف المكتبة المركزية: +213 44 44 29 37
+    <i class="fa-solid fa-phone"></i>
+    هاتف المكتبة المركزية:
+    <span class="ltr">+213 44 44 29 37</span>
   </a>
 
   <!-- واتساب -->
   <a href="https://wa.me/213559459500" class="button whatsapp">
-    <i class="fa-brands fa-whatsapp"></i> قسم الإعلام (واتساب): +213 559 45 95 00
+    <i class="fa-brands fa-whatsapp"></i>
+    قسم الإعلام (واتساب):
+    <span class="ltr">+213 559 45 95 00</span>
   </a>
 
   <!-- صفحة الفيسبوك -->
   <a href="https://facebook.com/irwane.org" class="button facebook">
-    <i class="fa-brands fa-facebook-f"></i> صفحة الفيسبوك: facebook.com/irwane.org
+    <i class="fa-brands fa-facebook-f"></i>
+    صفحة الفيسبوك: facebook.com/irwane.org
   </a>
 
   <!-- الموقع الجغرافي -->
   <a href="https://maps.app.goo.gl/Vi7uWVRtqnARo4FE7" class="button maps">
-    <i class="fa-solid fa-location-dot"></i> الموقع الجغرافي على الخرائط
+    <i class="fa-solid fa-location-dot"></i>
+    الموقع الجغرافي على الخرائط
   </a>
 
 </body>
