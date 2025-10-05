@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>بطاقة تعريفية</title>
+<title>بطاقة تعريفية - مؤسسة الشيخ عمي سعيد</title>
 <style>
   body {
-    font-family: Arial, sans-serif;
+    font-family: "Cairo", Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 25px 15px;
     background-color: #f9f9f9;
+    color: #333;
+  }
+  h1 {
+    color: #7b1f1f;
+    text-align: center;
+    margin-bottom: 25px;
   }
   .button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
-    max-width: 400px;
-    margin: 10px 0;
-    padding: 15px;
+    width: 95%;
+    max-width: 420px;
+    margin: 8px 0;
+    padding: 14px;
     font-size: 18px;
     font-weight: bold;
     color: white;
@@ -28,23 +34,56 @@
     border-radius: 10px;
     cursor: pointer;
     text-decoration: none;
-    transition: transform 0.2s;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
   }
   .button:hover {
     transform: scale(1.05);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   }
   .button i {
-    margin-right: 10px;
+    margin-left: 10px;
     font-size: 22px;
   }
   .whatsapp { background-color: #25D366; }
   .facebook { background-color: #1877F2; }
-  .website { background-color: #FF5722; } /* يمكن تعديل اللون حسب الهوية */
+  .website { background-color: #FF5722; } /* يمكن تعديله حسب هوية الموقع */
+  
+  .contact {
+    background: white;
+    width: 95%;
+    max-width: 420px;
+    margin-top: 25px;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    direction: rtl;
+  }
+  .contact h2 {
+    color: #7b1f1f;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #7b1f1f;
+    padding-bottom: 5px;
+  }
+  .contact p {
+    font-size: 16px;
+    margin: 6px 0;
+  }
+  .contact i {
+    color: #7b1f1f;
+    margin-left: 6px;
+  }
 </style>
+
 <!-- أيقونات فونت أوسم -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+<h1>مؤسسة الشيخ عمي سعيد</h1>
 
 <a href="https://q.me-qr.com/IJeTgH9S" class="button whatsapp" target="_blank">
   <i class="fas fa-map-marker-alt"></i> الموقع الجغرافي
@@ -57,6 +96,14 @@
 <a href="https://q.me-qr.com/IbY9Yj5b" class="button website" target="_blank">
   <i class="fas fa-globe"></i> الموقع الإلكتروني
 </a>
+
+<div class="contact">
+  <h2>📞 معلومات التواصل</h2>
+  <p><i class="fas fa-building"></i> <strong>المؤسسة:</strong> <a href="tel:+21329239223">+213 29 23 92 23</a></p>
+  <p><i class="fas fa-book"></i> <strong>المكتبة المركزية:</strong> <a href="tel:+21344442937">+213 44 44 29 37</a></p>
+  <p><i class="fab fa-whatsapp"></i> <strong>قسم الإعلام (واتساب):</strong> <a href="https://wa.me/213559459500" target="_blank">+213 559 45 95 00</a></p>
+  <p><i class="fas fa-envelope"></i> <strong>البريد الإلكتروني:</strong> <a href="mailto:fondation@irwane.org">fondation@irwane.org</a></p>
+</div>
 
 </body>
 </html>
