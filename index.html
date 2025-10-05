@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>بطاقة تعريفية - مؤسسة الشيخ عمي سعيد</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: "Tahoma", sans-serif;
@@ -22,7 +23,10 @@
     }
 
     .button {
-      display: block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       width: 100%;
       max-width: 420px;
       margin: 10px auto;
@@ -40,16 +44,16 @@
       opacity: 0.9;
     }
 
-    /* ألوان حسب المنصة */
-    .website { background-color: #0056b3; }    /* أزرق غامق */
-    .mail { background-color: #d93025; }       /* أحمر البريد */
-    .phone { background-color: #4a90e2; }      /* أزرق الهاتف */
-    .whatsapp { background-color: #25d366; }   /* أخضر واتساب */
-    .facebook { background-color: #1877f2; }   /* أزرق فيسبوك */
-    .maps { background-color: #34a853; }       /* أخضر خرائط */
+    /* الألوان حسب الخدمة */
+    .website { background-color: #0056b3; }
+    .mail { background-color: #d93025; }
+    .phone { background-color: #4a90e2; }
+    .whatsapp { background-color: #25d366; }
+    .facebook { background-color: #1877f2; }
+    .maps { background-color: #34a853; }
 
-    .icon {
-      margin-left: 10px;
+    i {
+      font-size: 22px;
     }
   </style>
 </head>
@@ -59,23 +63,38 @@
   <img class="logo" src="https://raw.githubusercontent.com/youcefbouka/-/8870743832e9b891eba5cbeef073e18854819089/unnamed.jpg" alt="شعار المؤسسة">
 
   <!-- الموقع الإلكتروني -->
-  <a href="https://www.irwane.org" class="button website">🌐 الموقع الإلكتروني: www.irwane.org</a>
+  <a href="https://www.irwane.org" class="button website">
+    <i class="fa-solid fa-globe"></i> الموقع الإلكتروني: www.irwane.org
+  </a>
 
   <!-- البريد الإلكتروني -->
-  <a href="mailto:fondation@irwane.org" class="button mail">📧 البريد الإلكتروني: fondation@irwane.org</a>
+  <a href="mailto:fondation@irwane.org" class="button mail">
+    <i class="fa-solid fa-envelope"></i> البريد الإلكتروني: fondation@irwane.org
+  </a>
 
-  <!-- أرقام الهواتف -->
-  <a href="tel:+21329239223" class="button phone">📞 المؤسسة: +213 29 23 92 23</a>
-  <a href="tel:+21344442937" class="button phone">☎️ المكتبة المركزية: +213 44 44 29 37</a>
+  <!-- أرقام الهواتف الثابتة -->
+  <a href="tel:+21329239223" class="button phone">
+    <i class="fa-solid fa-phone"></i> هاتف المؤسسة: +213 29 23 92 23
+  </a>
+
+  <a href="tel:+21344442937" class="button phone">
+    <i class="fa-solid fa-phone"></i> هاتف المكتبة المركزية: +213 44 44 29 37
+  </a>
 
   <!-- واتساب -->
-  <a href="https://wa.me/213559459500" class="button whatsapp">💬 قسم الإعلام (واتساب): +213 559 45 95 00</a>
+  <a href="https://wa.me/213559459500" class="button whatsapp">
+    <i class="fa-brands fa-whatsapp"></i> قسم الإعلام (واتساب): +213 559 45 95 00
+  </a>
 
   <!-- صفحة الفيسبوك -->
-  <a href="https://facebook.com/irwane.org" class="button facebook">📘 صفحة الفيسبوك: facebook.com/irwane.org</a>
+  <a href="https://facebook.com/irwane.org" class="button facebook">
+    <i class="fa-brands fa-facebook-f"></i> صفحة الفيسبوك: facebook.com/irwane.org
+  </a>
 
   <!-- الموقع الجغرافي -->
-  <a href="https://maps.app.goo.gl/Vi7uWVRtqnARo4FE7" class="button maps">📍 الموقع الجغرافي على الخرائط</a>
+  <a href="https://maps.app.goo.gl/Vi7uWVRtqnARo4FE7" class="button maps">
+    <i class="fa-solid fa-location-dot"></i> الموقع الجغرافي على الخرائط
+  </a>
 
 </body>
 </html>
