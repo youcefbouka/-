@@ -3,60 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>أزرار الاتصال بالمؤسسة</title>
+<title>بطاقة تعريفية</title>
 <style>
   body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
+    background-color: #f9f9f9;
   }
   .button {
-    width: 90%;
-    max-width: 400px;
-    padding: 15px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 12px;
-    color: white;
-    font-size: 18px;
-    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin: 10px 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transition: transform 0.2s;
   }
   .button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+    transform: scale(1.05);
   }
-  .location { background-color: #4CAF50; }  /* أخضر */
-  .facebook { background-color: #1877F2; }  /* أزرق فيسبوك */
-  .website { background-color: #FF5722; }   /* برتقالي */
-  .icon {
-    font-size: 24px;
+  .button i {
+    margin-right: 10px;
+    font-size: 22px;
   }
+  .whatsapp { background-color: #25D366; }
+  .facebook { background-color: #1877F2; }
+  .website { background-color: #FF5722; } /* يمكن تعديل اللون حسب الهوية */
 </style>
-<!-- استخدام أيقونات من Font Awesome -->
+<!-- أيقونات فونت أوسم -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<a href="https://q.me-qr.com/IJeTgH9S" class="button location" target="_blank">
-  <i class="fas fa-map-marker-alt icon"></i> الموقع الجغرافي
+<a href="https://q.me-qr.com/IJeTgH9S" class="button whatsapp" target="_blank">
+  <i class="fas fa-map-marker-alt"></i> الموقع الجغرافي
 </a>
 
 <a href="https://q.me-qr.com/jpCWs5jC" class="button facebook" target="_blank">
-  <i class="fab fa-facebook icon"></i> صفحة الفيسبوك
+  <i class="fab fa-facebook-f"></i> صفحة الفيسبوك
 </a>
 
 <a href="https://q.me-qr.com/IbY9Yj5b" class="button website" target="_blank">
-  <i class="fas fa-globe icon"></i> الموقع الإلكتروني
+  <i class="fas fa-globe"></i> الموقع الإلكتروني
 </a>
 
 </body>
